@@ -1,0 +1,210 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #202020;
+    --color-glass: rgba(255, 255, 255, 0.05);
+    --color-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--color-white);
+  }
+  body {
+    background: url(background-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-color: black;
+  }
+
+  #newyaer{
+    
+    width: max-content;
+    height: max-content;
+  }
+  h1{
+    background-image: linear-gradient(to right,black,rgb(236, 113, 121),rgb(43, 126, 115));
+    animation: slidein 5s ease-in-out 3s infinite alternate;
+  }
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+    
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  .heading h1 {
+    text-shadow: var(--color-shadow);
+    font-size: 6.2em;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+  }
+  .heading h3 {
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--color-shadow);
+    padding: 8px 30px;
+    display: inline-block;
+  }
+  .countdown {
+    width: 95vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .box {
+    width: 28vmin;
+    height: 29vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  span.num {
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    box-shadow: var(--color-shadow);
+    border-radius: 0.1em;
+  }
+  span.num:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-glass);
+    height: 100%;
+    width: 50%;
+    left: 0;
+  }
+  span.text {
+    font-size: 1em;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    display: block;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+    padding: 0.7em 0;
+    font-weight: 600;
+    border-radius: 0.3em;
+    box-shadow: var(--color-shadow);
+  }
+
+
+  /* text animation */
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: #001122;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+}
+.loader {
+  margin-top: 50px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  background-image: linear-gradient(to right,black,cyan,rgb(219, 163, 186));
+  padding: 10px;
+  
+  display: inline;
+}
+.loader > span {
+  display: inline-block;
+  color: rgb(255, 247, 249);
+  transform-style: preserve-3d;
+  transform-origin: 0 100%;
+  animation: anim 3s infinite linear;
+}
+.loader > span:nth-child(even) {
+  color: #f70bd7;
+}
+.loader > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.loader > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.loader > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.loader > span:nth-child(6) {
+  animation-delay: 1s;
+}
+.loader > span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.loader > span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.loader > span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.loader > span:nth-child(10) {
+  animation-delay: 1.8s;
+}
+.loader > span:nth-child(11) {
+  animation-delay: 2s;
+}
+.loader > span:nth-child(12) {
+  animation-delay: 2.2s;
+}
+.loader > span:nth-child(13) {
+  animation-delay: 2.4s;
+}
+.loader > span:nth-child(14) {
+  animation-delay: 2.6s;
+}
+@keyframes anim {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+/* flotter.......... */
+.flotter{
+background-image: linear-gradient(to right, rgb(99, 36, 36),rgb(7, 77, 77),rgb(219, 163, 186));
+text-align: center;
+font-size: 19px;
+}
+.name{
+  background: #f70b52;
+  color: #001122;
+}
+
+  
+  
